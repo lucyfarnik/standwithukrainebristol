@@ -15,7 +15,7 @@ export default function Section({
                         autoPlay
                         loop
                         muted
-                        className="absolute z-10 min-w-full w-auto min-h-full"
+                        className="absolute z-10 min-w-full w-auto min-h-full object-cover"
                     >
                         <source
                             src={new URL(`/src/assets/videos/${background}.mp4`, import.meta.url).href}
@@ -26,7 +26,7 @@ export default function Section({
                     <Gradient className="bg-gradient-to-br from-slate-700 to-gray-700 opacity-60" />
                 </div>
             )}
-            <main className={`relative max-w-4xl ${notFullscreen ? '' : 'min-h-[calc(100vh-4rem-4px)]'} mx-auto z-40 p-4 ${background ? 'text-white': ''}`}>
+            <main className={`relative max-w-4xl ${notFullscreen ? '' : 'min-h-screen md:min-h-[calc(100vh-4rem-4px)]'} mx-auto z-40 p-4 ${background ? 'text-white': ''}`}>
                 <Component />
             </main>
             {arrowTo && (

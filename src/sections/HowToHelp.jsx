@@ -46,7 +46,7 @@ export default function HowToHelp() {
                     </Link>.
                 </p>
             </div>
-            <div className="mt-4">
+            <div className="mt-8">
                 <h3>2. Donate to the Ukrainian army or the refugees</h3>
                 <p>
                     You can donate to the army{' '}
@@ -58,20 +58,20 @@ export default function HowToHelp() {
                     </Link>.
                 </p>
             </div>
-            <div className="mt-4">
-                <h3>3. Come to the protest</h3>
-                <p>
-                    Scroll down for more information.
-                </p>
-            </div>
-            <div className="mt-4">
-                <h3>4. Let your friends know</h3>
+            <div className="mt-8">
+                <h3>3. Let your friends know</h3>
                 <p>
                     A lot of people don't know a lot about what's going on.
                     Letting the people around you know about it can make a big
                     difference. In person conversations are amazing, but you
                     can also just post about it on your story, or even send people
                     the link to this website.
+                </p>
+            </div>
+            <div className="mt-8">
+                <h3>4. Come to the protest</h3>
+                <p>
+                    Scroll down for more information.
                 </p>
             </div>
         </div>

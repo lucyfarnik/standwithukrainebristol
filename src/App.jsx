@@ -10,8 +10,8 @@ export default function App() {
   return (
     <div>
       <Navbar />
-      <div className="fixed top-16 left-0 right-0 border-b-4 border-b-flag-bottom z-50" />
-      <div className="mt-[calc(4rem+4px)]">
+      <div className="invisible md:visible fixed top-16 left-0 right-0 border-b-4 border-b-flag-bottom z-50" />
+      <div className="mt-0 md:mt-[calc(4rem+4px)]">
         <Section
           name="home"
           Component={Home}

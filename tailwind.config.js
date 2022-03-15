@@ -22,6 +22,9 @@ module.exports = {
           }
         },
       },
+      screens: {
+        'timeline-lg': '1170px',
+      },
     },
   },
   plugins: [],

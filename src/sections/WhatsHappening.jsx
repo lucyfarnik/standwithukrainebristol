@@ -20,8 +20,9 @@ const Event = ({ date, icon, color, heading, text }) => (
         contentArrowStyle={{ borderRight: `7px solid ${color}` }}
         textClassName="text-white"
         date={date}
-        dateClassName="text-black"
-        iconStyle={{ background: color, fontSize: '2.5rem', textAlign: 'center' }}
+        dateClassName="timeline-lg:text-black"
+        iconClassName="text-center text-3xl timeline-lg:text-4xl timeline-lg:pt-2"
+        iconStyle={{ background: color }}
         icon={<span>{icon}</span>}
     >
         <h3 className="vertical-timeline-element-title">{heading}</h3>
@@ -70,13 +71,21 @@ export default function WhatsHappening() {
                     icon={helmet}
                     color={red}
                     heading="Army to the border"
-                    text={`
-                    Then in March 2021 he started sending troops to the Ukrainian border.
-                    The world was alarmed, but he said they were only there for "exercises"
-                    - an excuse which became completely transparent once they started
-                    setting up field hospitals next to the border, which would only
-                    make sense if they knew there would be bloodshed.
-                    `}
+                    text={
+                        <>
+                            <p>
+                                Then in March 2021 he started sending troops
+                                to the Ukrainian border. The world was alarmed,
+                                but he said they were only there for "exercises"
+                            </p>
+                            <p>
+                                This excuse which became completely transparent
+                                once they started setting up field hospitals
+                                next to the border, which clearly shows they
+                                knew there would be bloodshed.
+                            </p>
+                        </>
+                    }
                 />
                 <Event
                     date="July 2021"
@@ -123,7 +132,20 @@ export default function WhatsHappening() {
                     icon={death}
                     color={black}
                     heading="Invasion"
-                    text="Then on 24 February at 6 am, he launched a full-scale invasion of Ukraine. They've been relentlessly bombing civilians ever since.  Tens of thousands have already died, and millions have fled into other countries. Countless homes have been destroyed."
+                    text={
+                        <>
+                            <p>
+                                Then on 24 February at 6 am, he launched a
+                                full-scale invasion of Ukraine. They've been
+                                relentlessly bombing civilians ever since.
+                            </p>
+                            <p>
+                                Tens of thousands have already died, and
+                                millions have fled into other countries.
+                                Countless homes have been destroyed.
+                            </p>
+                        </>
+                    }
                 />
                 <Event
                     date="Right now"
@@ -133,15 +155,20 @@ export default function WhatsHappening() {
                     text="The Ukrainian people are fighting for their survival, and they need all the help they can get."
                 />
             </VerticalTimeline>
-            <p className="my-6">
-                But this isn't just about one country or one war. It's about
-                a principle - the principle that war cannot be worth it.
-                It's a principle that's been in place since WW2, and it is
-                now being put into question. If this war ends up being worth
-                it for Putin, we'll see countless other wars over the next few
-                decades. We need to make him regret this, and to
-                make an example of him.
-            </p>
+            <div className="my-6">
+                <p>
+                    But this isn't just about one country or one war. It's about
+                    a principle - the principle that war cannot be worth it.
+                    It's a principle that's been in place since WW2, and it is
+                    now being put into question.
+                </p>
+                <p>
+                    If this war ends up being worth it for Putin, we'll see
+                    countless other wars over the next few decades. We need to
+                    make him regret this, and to show everyone who's watching
+                    that war is never the answer.
+                </p>
+            </div>
         </div>
     )
 }
