@@ -4,7 +4,7 @@ export default function Contact() {
     return (
         <div>
             <h1>Contact</h1>
-            <div className="flex justify-evenly mb-6">
+            <div className="flex justify-evenly mb-20">
                 <div className="w-60">
                     <h3>Lucy Farnik</h3>
                     <p>Organizer, web designer</p>

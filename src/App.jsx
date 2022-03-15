@@ -5,6 +5,7 @@ import Protest from './sections/Protest';
 import WhatsHappening from './sections/WhatsHappening';
 import HowToHelp from './sections/HowToHelp';
 import Contact from './sections/Contact';
+import Footer from './Footer';
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
         <Section name="protest" Component={Protest} background="Ukraine2" />
         <Section name="contact" Component={Contact} notFullscreen />
       </div>
+      <Footer />
     </div>
   )
 }
