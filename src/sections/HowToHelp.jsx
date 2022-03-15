@@ -18,16 +18,20 @@ export default function HowToHelp() {
                     want to get re-elected.
                 </p>
                 <p>
-                    If you live in this area your MP is Thangam Debbonaire.
+                    If you live <strong>in this area</strong> your MP is Thangam Debbonaire.
                 </p>
                 <img src={bristolWest} className="mx-auto my-2" />
                 <p>
                     Her email is{' '}
                     <Link to="mailto:thangam.debbonaire.mp@parliament.uk">
-                        thangam.debbonaire.mp@parliament.uk
+                        <strong>
+                            thangam.debbonaire.mp@parliament.uk
+                        </strong>
                     </Link>, her phone number is{' '}
                     <Link to="tel:0117 3790980">
-                        0117 3790980
+                        <strong>
+                            0117 3790980
+                        </strong>
                     </Link> (this goes straight to voice mail so no need for
                     phone call anxiety).
                 </p>
@@ -39,10 +43,22 @@ export default function HowToHelp() {
                     talk to another human about it.
                 </p>
                 <p className="mt-4">
-                    If you live somewhere else you can find your MP's email
+                    If you <strong>live somewhere else</strong> you can find your MP's email
                     and phone number{' '}
                     <Link to="https://members.parliament.uk/members/commons">
-                        here
+                        <strong>
+                            here
+                        </strong>
+                    </Link>.
+                </p>
+                <p className="mt-4">
+                    If you're an <strong>EU citizen</strong> and have a bit
+                    more time you should also definitely get in touch with your
+                    Members of the European Parliament, you can find their contact info{' '}
+                    <Link to="https://www.europarl.europa.eu/meps/en/home">
+                        <strong>
+                            here
+                        </strong>
                     </Link>.
                 </p>
             </div>
