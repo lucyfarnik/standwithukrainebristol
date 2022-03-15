@@ -34,9 +34,9 @@ export default function WhatsHappening() {
     return (
         <div>
             <h1>What's Happening in Ukraine?</h1>
-            <dd className="mb-4">
+            <p className="mb-4">
                 A TLDR for those that haven't been following the news
-            </dd>
+            </p>
             <VerticalTimeline lineColor="#ccc">
                 <Event
                     date="1991 - present"

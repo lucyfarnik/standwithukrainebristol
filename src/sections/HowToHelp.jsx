@@ -1,5 +1,5 @@
 import Link from '../Link';
-import bristolWest from '../assets/images/bristol-west.jpg';
+import bristolWest from '../assets/images/bristol-west.webp';
 
 export default function HowToHelp() {
     return (
@@ -20,7 +20,7 @@ export default function HowToHelp() {
                 <p>
                     If you live <strong>in this area</strong> your MP is Thangam Debbonaire.
                 </p>
-                <img src={bristolWest} className="mx-auto my-2" />
+                <img src={bristolWest} className="mx-auto my-2" alt="Bristol West" />
                 <p>
                     Her email is{' '}
                     <Link to="mailto:thangam.debbonaire.mp@parliament.uk">
@@ -43,34 +43,29 @@ export default function HowToHelp() {
                     talk to another human about it.
                 </p>
                 <p className="mt-4">
-                    If you <strong>live somewhere else</strong> you can find your MP's email
-                    and phone number{' '}
+                    If you <strong>live somewhere else</strong> you can{' '}
                     <Link to="https://members.parliament.uk/members/commons">
-                        <strong>
-                            here
-                        </strong>
+                        find your MP's email and phone number here
                     </Link>.
                 </p>
                 <p className="mt-4">
                     If you're an <strong>EU citizen</strong> and have a bit
                     more time you should also definitely get in touch with your
-                    Members of the European Parliament, you can find their contact info{' '}
+                    Members of the European Parliament, you can{' '}
                     <Link to="https://www.europarl.europa.eu/meps/en/home">
-                        <strong>
-                            here
-                        </strong>
+                        find their contact info here
                     </Link>.
                 </p>
             </div>
             <div className="mt-8">
-                <h3>2. Donate to the Ukrainian army or the refugees</h3>
+                <h3>2. Donate</h3>
                 <p>
-                    You can donate to the army{' '}
+                    You can donate{' '}
                     <Link to="https://bank.gov.ua/en/news/all/natsionalniy-bank-vidkriv-spetsrahunok-dlya-zboru-koshtiv-na-potrebi-armiyi">
-                        here
-                    </Link> and to the refugees{' '}
+                        to the army
+                    </Link> or{' '}
                     <Link to="https://www.unrefugees.org.uk/take-action/how-to-help-ukraine/">
-                        here
+                        to the refugees
                     </Link>.
                 </p>
             </div>

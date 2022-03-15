@@ -9,7 +9,7 @@ export default function Section({
     name, Component, background, lazyload, arrowTo, arrowToWhite, borderB, notFullscreen
 }) {
     function createVideoHTML() {
-        const img = new URL(`/src/assets/images/${background}.jpg`, import.meta.url).href;
+        const img = new URL(`/src/assets/images/${background}.webp`, import.meta.url).href;
         const webm = new URL(`/src/assets/videos/${background}.webm`, import.meta.url).href;
         const mp4 = new URL(`/src/assets/videos/${background}.mp4`, import.meta.url).href;
 
@@ -26,6 +26,7 @@ export default function Section({
             <img
                 src="${img}"
                 title="Your browser does not support the <video> tag"
+                alt="Protest"
             />
         </video>`};
     }
