@@ -23,7 +23,10 @@ export default function Section({
                 src="${new URL(`/src/assets/videos/${background}.mp4`, import.meta.url).href}"
                 type="video/mp4"
             />
-            <img src="${new URL(`/src/assets/images/${background}.jpg`, import.meta.url).href}" />
+            <img
+                src="${new URL(`/src/assets/images/${background}.jpg`, import.meta.url).href}"
+                title="Your browser does not support the <video> tag"
+            />
         </video>`};
     }
 
