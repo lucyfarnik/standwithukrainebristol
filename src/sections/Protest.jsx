@@ -1,7 +1,7 @@
 export default function Protest() {
     return (
         <div className="text-lg">
-            <h1>Protest</h1>
+            <h1 className="mb-6">Protest</h1>
             <h2>Our demands:</h2>
             <ol className="text-xl font-bold mt-4 mb-40">
                 <li>1. A complete embargo on Russian oil</li>
