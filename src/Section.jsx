@@ -8,23 +8,22 @@ export default function Section({
     name, Component, background, arrowTo, arrowToWhite, borderB, notFullscreen
 }) {
     function createVideoHTML() {
+        const img = new URL(`/src/assets/images/${background}.jpg`, import.meta.url).href;
+        const webm = new URL(`/src/assets/videos/${background}.webm`, import.meta.url).href;
+        const mp4 = new URL(`/src/assets/videos/${background}.mp4`, import.meta.url).href;
+
         return {__html: `<video
             autoplay
             playsinline
             loop
             muted
             class="absolute z-10 min-w-full w-auto min-h-full object-cover"
+            poster="${img}"
         >
-            <source
-                src="${new URL(`/src/assets/videos/${background}.webm`, import.meta.url).href}"
-                type="video/webm"
-            />
-            <source
-                src="${new URL(`/src/assets/videos/${background}.mp4`, import.meta.url).href}"
-                type="video/mp4"
-            />
+            <source src="${webm}" type="video/webm" />
+            <source src="${mp4}" type="video/mp4" />
             <img
-                src="${new URL(`/src/assets/images/${background}.jpg`, import.meta.url).href}"
+                src="${img}"
                 title="Your browser does not support the <video> tag"
             />
         </video>`};

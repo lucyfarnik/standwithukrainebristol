@@ -26,3 +26,11 @@ h3 {
 p {
   margin-bottom: 0.5em;
 }
+
+*::-webkit-media-controls-panel,
+*::-webkit-media-controls-play-button,
+*::-webkit-media-controls-start-playback-button {
+  display: none!important;
+  -webkit-appearance: none;
+  opacity: 0;
+}
