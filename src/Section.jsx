@@ -1,11 +1,12 @@
 import { Element, Link } from 'react-scroll';
+import LazyLoad from 'react-lazyload';
 
 const Gradient = ({ className }) => (
     <div className={`absolute h-full w-full z-20 bg-[length:400%_400%] animate-gradient ${className || ''}`} />
 );
 
 export default function Section({
-    name, Component, background, arrowTo, arrowToWhite, borderB, notFullscreen
+    name, Component, background, lazyload, arrowTo, arrowToWhite, borderB, notFullscreen
 }) {
     function createVideoHTML() {
         const img = new URL(`/src/assets/images/${background}.jpg`, import.meta.url).href;
@@ -35,7 +36,13 @@ export default function Section({
         <Element name={name} className={`w-full relative ${borderB ? 'border-b-2' : ''}`}>
             {background && (
                 <div className="absolute top-0 right-0 bottom-0 left-0 overflow-hidden">
-                    <div dangerouslySetInnerHTML={createVideoHTML()} />
+                    {lazyload ? (
+                        <LazyLoad once offset={1000}>
+                            <div dangerouslySetInnerHTML={createVideoHTML()} />
+                        </LazyLoad>
+                    ) : (
+                        <div dangerouslySetInnerHTML={createVideoHTML()} />
+                    )}
                     <Gradient className="bg-gradient-to-bl from-flag-top to-flag-bottom opacity-30" />
                     <Gradient className="bg-gradient-to-br from-slate-700 to-gray-700 opacity-60" />
                 </div>

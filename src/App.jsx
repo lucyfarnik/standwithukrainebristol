@@ -22,7 +22,7 @@ export default function App() {
         />
         <Section name="whats-happening" Component={WhatsHappening} borderB />
         <Section name="how-to-help" Component={HowToHelp} arrowTo="protest" />
-        <Section name="protest" Component={Protest} background="Ukraine2" />
+        <Section name="protest" Component={Protest} background="Ukraine2" lazyload />
         <Section name="contact" Component={Contact} notFullscreen />
       </div>
       <Footer />
