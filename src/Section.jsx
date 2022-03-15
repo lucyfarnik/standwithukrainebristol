@@ -13,14 +13,16 @@ export default function Section({
                 <div className="absolute top-0 right-0 bottom-0 left-0 overflow-hidden">
                     <video
                         autoPlay
+                        playsinline
                         loop
                         muted
                         className="absolute z-10 min-w-full w-auto min-h-full object-cover"
                     >
                         <source
-                            src={new URL(`/src/assets/videos/${background}.mp4`, import.meta.url).href}
-                            type="video/mp4"
+                            src={new URL(`/src/assets/videos/${background}.webm`, import.meta.url).href}
+                            type="video/webm"
                         />
+                        <img src={new URL(`/src/assets/images/${background}.jpg`, import.meta.url).href} />
                     </video>
                     <Gradient className="bg-gradient-to-bl from-flag-top to-flag-bottom opacity-30" />
                     <Gradient className="bg-gradient-to-br from-slate-700 to-gray-700 opacity-60" />
