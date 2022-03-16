@@ -156,6 +156,11 @@ export default function WhatsHappening() {
                 />
             </VerticalTimeline>
             <div className="my-6">
+                <p className="mb-4 text-xs">
+                    <Link to="https://war.ukraine.ua/">
+                        Want to learn more?
+                    </Link>
+                </p>
                 <p>
                     But this isn't just about one country or one war. It's about
                     a principle - the principle that war cannot be worth it.
