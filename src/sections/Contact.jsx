@@ -22,10 +22,9 @@ export default function Contact() {
                         If you find a problem with the website please get
                         in touch with me directly.
                     </p>
-                    <div className="flex justify-around">
-                        <Link to="mailto:lucyfarnik@gmail.com">Email</Link>
-                        <Link to="https://www.instagram.com/lucyfarnik/">
-                            Instagram
+                    <div className="flex justify-center">
+                        <Link to="mailto:lucyfarnik@gmail.com">
+                            Email
                         </Link>
                     </div>
                 </div>
