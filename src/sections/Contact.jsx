@@ -19,7 +19,7 @@ export default function Contact() {
                     <p>Organizer, web designer</p>
                     <p className="text-sm">
                         If you find a problem with the website please get
-                        in touch with me.
+                        in touch with me directly.
                     </p>
                     <div className="flex justify-around">
                         <Link to="mailto:lucyfarnik@gmail.com">Email</Link>

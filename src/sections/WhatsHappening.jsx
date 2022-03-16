@@ -79,7 +79,7 @@ export default function WhatsHappening() {
                                 but he said they were only there for "exercises"
                             </p>
                             <p>
-                                This excuse which became completely transparent
+                                This excuse became completely transparent
                                 once they started setting up field hospitals
                                 next to the border, which clearly shows they
                                 knew there would be bloodshed.
@@ -94,7 +94,7 @@ export default function WhatsHappening() {
                     heading="Putin's essay"
                     text={
                         <p>
-                            In the middle of all this field, Putin released a{' '}
+                            In the middle of all this, Putin released a{' '}
                             <Link to="https://en.wikipedia.org/wiki/On_the_Historical_Unity_of_Russians_and_Ukrainians">
                                 5000-word essay
                             </Link> claiming Ukraine isn't a real country.
