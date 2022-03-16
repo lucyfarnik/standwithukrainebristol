@@ -4,9 +4,11 @@ export default function Protest() {
             <h1 className="mb-6">Protest</h1>
             <h2>Our demands:</h2>
             <ol className="text-xl font-bold mt-4 mb-40">
-                <li>1. A complete embargo on Russian oil</li>
+                <li>1. A complete embargo on Russian oil and gas</li>
                 <li>2. A complete cut off of <em>all</em> Russian banks from SWIFT</li>
                 <li>3. Supplying the Ukrainian army with military equipment, including fighter jets</li>
+                <li>4. Simplify immigration for refugees</li>
+                <li>5. Close the sanction loopholes, cut off Russian oligarchs</li>
             </ol>
             <p>
                 Saturday 19th. 2pm. College Green.
