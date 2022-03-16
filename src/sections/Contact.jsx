@@ -8,10 +8,11 @@ export default function Contact() {
                 <div className="w-80 mb-10 mx-auto">
                     <h3>Stand With Ukraine Bristol</h3>
                     <div className="flex justify-around">
-                        <Link to="mailto:info@standwithukrainebristol.co.uk">Email</Link>
+                        <Link to="https://fb.me/e/1kNwbl9k1">Facebook</Link>
                         <Link to="https://www.instagram.com/stand_with_ukraine.bristol/">
                             Instagram
                         </Link>
+                        <Link to="mailto:info@standwithukrainebristol.co.uk">Email</Link>
                     </div>
                 </div>
                 <div className="w-80 mb-10 mx-auto">
