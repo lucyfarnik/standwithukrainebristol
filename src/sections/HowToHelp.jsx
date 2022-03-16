@@ -58,16 +58,29 @@ export default function HowToHelp() {
                 </p>
             </div>
             <div className="mt-8">
-                <h3>2. Donate</h3>
-                <p>
-                    You can donate{' '}
-                    <Link to="https://bank.gov.ua/en/news/all/natsionalniy-bank-vidkriv-spetsrahunok-dlya-zboru-koshtiv-na-potrebi-armiyi">
-                        to the army
-                    </Link> or{' '}
-                    <Link to="https://www.unrefugees.org.uk/take-action/how-to-help-ukraine/">
-                        to the refugees
-                    </Link>.
-                </p>
+                <h3>2. Donate to the army or the refugees</h3>
+                <ul className="list-disc ml-6">
+                    <li>
+                        <Link to="https://donation.dec.org.uk/ukraine-humanitarian-appeal">
+                            Disasters Emergency Committee - food, shelter and healthcare for refugees
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="https://www.comebackalive.in.ua/donate?fbclid=IwAR0DmVyiCJW1c1z5TAjlAqLo3aqJNYiVe5AGeSHL3ytG-AK2rhdj3YQ6hMk">
+                            Come Back Alive - supplies for the Ukrainian army
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="https://pekelnitachky.com/en">
+                            Hell Rides - vehicles for the Ukrainian army
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="https://www.unicef.org.uk/donate/donate-now-to-protect-children-in-ukraine/">
+                            UNICEF - helping refugee children
+                        </Link>
+                    </li>
+                </ul>
             </div>
             <div className="mt-8">
                 <h3>3. Let your friends know</h3>
