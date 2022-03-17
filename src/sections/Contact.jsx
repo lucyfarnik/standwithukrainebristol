@@ -12,7 +12,9 @@ export default function Contact() {
                         <Link to="https://www.instagram.com/stand_with_ukraine.bristol/">
                             Instagram
                         </Link>
-                        <Link to="mailto:info@standwithukrainebristol.co.uk">Email</Link>
+                        <Link to="mailto:info@standwithukrainebristol.co.uk">
+                            Email
+                        </Link>
                     </div>
                 </div>
                 <div className="md:w-60 mb-10 px-2 mx-auto">
