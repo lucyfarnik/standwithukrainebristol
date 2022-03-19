@@ -4,7 +4,7 @@ export default function Link({ to, className, children }) {
             href={to}
             target="_blank"
             rel="noopener noreferrer"
-            className={`underline ${className}`}
+            className={`underline ${className || ''}`}
         >
             {children}
         </a>
