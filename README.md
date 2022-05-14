@@ -18,3 +18,18 @@ build tool.
 It includes videos from previous protests in Bristol, along with a
 timeline of events using the excellent [Vertical Timeline component
 by Stéphane Monnot](https://github.com/stephane-monnot/react-vertical-timeline).
+
+## Licence
+Despite being publicly visible, all content of this repository is
+private intellectual property and cannot be re-used without my
+explicit written permission.
+
+If you want to use some of this code to create your own website
+for your cause, you MUST get in touch with me (lucyfarnik@gmail.com)
+and get explicit written permission first. This is to ensure my
+software isn't being used to promote what I consider to be harmful
+views, such as conversion therapy or abortion bans.
+
+That said, if your cause can be reasonably supported by a sensible
+left-wing activist, I will almost certainly give you permission to
+use my code to promote it.
